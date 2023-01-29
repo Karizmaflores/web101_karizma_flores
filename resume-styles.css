@@ -1,103 +1,106 @@
 body{
   display: 100vh;
-  width: 736px;
-  
+  width: 630px;
 }
 
-div, img{
-  /*border: 1px solid red;*/
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+div{
+  font-family: 'Questrial';
   font-size: 12px;
-  color: purple;
-  margin-bottom: 5px;
+  color: black;
+}
+
+h2{
+  font-family: 'Windsong';
+  font-size: 20px;
+  color: rgb(248, 14, 131)
+}
+
+h3{
+  font-size: 25px;
+  font-family: 'Windsong';
+  font-stretch: 40px;
+  color: black;
 }
 
 p{
-  font-size: 11px;
+  font-size: 25px;
+  padding-left: 20px;
 }
 
 p2{
-  font-size: 11px;
+  font-size: 12px;
+}
+
+p3{
+  font-size: 13px;
+  color: black;
 }
 
 .grid-container{
   display: grid;
-  grid-template-rows: 200px 25px 75px 225px 150px;
+  grid-template-rows: 200px 40px 65px 275px 125px;
   grid-template-columns: 1fr 2fr;
-  grid-gap: 10px;
 }
 
 div.title h1{
-  color: purple;
-  font-size: 40px;
+  color: rgb(248, 14, 131);
+  font-size: 55px;
   margin-bottom: 10px;
+  font-family: 'Windsong';
+  padding-left: 20px;
 }
 
 div.image {
   background-color: pink;
-  grid-row:  1/2;
+  grid-row:  1/3;
   grid-column: 1/2;
   background-image: url("./Miley.avif");
-  background-size: 100%;
+  background-size: 116%;
 }
 
 div.title {
-  /*background-color: lightblue;*/
+  background-color: lightblue;
   grid-row:  1/2;
   grid-column: 2/2;
 }
 
 div.line-1{
   height: 1px;
-  background: purple;
-  width: 400px;
-}
-
-div.contact {
-  background-color: hotpink;
-  grid-row:  2/6;
-  grid-column: 1/2;
+  background: black;
+  width: 325px;
+  margin-left: 20px;
 }
 
 div.experience-section {
-  /*background-color: rgb(255, 252, 99);*/
   grid-row:  2/3;
   grid-column: 2/2;
-  padding-top: 10px;
+  padding-left: 20px;
 }
 
-div.line-2{
-  height: 1px;
-  background: purple;
-  width: 400px;
-}
+ div.contactInfo{
+  grid-row: 3/6;
+  grid-column: 1/2;
+  background-color: rgb(248, 14, 131);
+  color: white;
+  font-size: 15px;
+  text-align: center;
+ }
 
 div.experience{
-  /*background-color: rgb(255, 167, 99);*/
   grid-row: 3/4;
   grid-column: 2/2;
+  padding-top: 10px;
+  padding-left: 20px;
 }
 
 div.history-section{
-  /*background-color: rgb(221, 170, 255);*/
   grid-row:  4/5;
   grid-column: 2/2;
-}
-
-div.line-3{
-  height: 1px;
-  background: purple;
-  width: 400px;
+  padding-left: 20px;
 }
 
 div.education-section {
-  /*background-color: rgb(255, 99, 99);*/
   grid-row: 5/6;
   grid-column: 2/2;
-}
-
-div.line-4{
-  height: 1px;
-  background: purple;
-  width: 400px;
+  padding-left: 20px;
 }

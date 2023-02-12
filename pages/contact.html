@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/contact-styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jura:wght@600&family=Trade+Winds&display=swap" rel="stylesheet">
+</head>
+<body>
+  <script src="../js/contact.js"></script>
+  <h1>Contact Me</h1>
+  <form action="../pages/results.html" method="GET" enctype="multipart/form-data">
+      <div class="form-group">
+      <label for="email">Email</label>
+      <input id="email" name="Email" type="email">
+        <br>
+      <label for="comments">Comments</label>
+      <textarea id="comments" name="Comments" minlength="20" maxlength="500"></textarea>
+        <br>
+      </div>
+
+      <div class="checks">
+        <label for="checkbox">How did you hear about me?</label>
+          <br>
+        <input type="checkbox" id="classmate" name="Reference" value="Classmate">
+        <label for="classmate"> Classmate</label>
+          <br>
+        
+        <input type="checkbox" id="resume" name="Reference" value="Resume Submission">
+        <label for="resumeSubmission"> Resume Submission</label>
+          <br>
+        
+        <input type="checkbox" id="linkedIn" name="Reference" value="LinkedIn">
+        <label for="linkedIn"> LinkedIn</label>
+          <br>
+
+        <input type="checkbox" id="codingAcademyRec" name="Reference" value="Coding Academy Rec">
+        <label for="codingAcademyRec"> Coding Academy Rec</label>
+          <br><br>
+      </div>
+
+      <div class="radio">
+        <label for="radio">Would you like to be contacted back?</label>
+          <br>
+        <input type="radio" name="Contact Back" id="yes" value="yes">
+        <label for="other">Yes</label>
+        <input type="radio" name="Contact Back" id="No" value="No">
+        <label for="other">No</label>
+          <br><br>
+      </div>
+        
+      <div class="date">
+        <label for="date">Enter your date of birth for a Birthday Wish:</label>
+          <br>
+        <label for="date"></label>
+        <input type="date"  name="Date" id="date" min="2019-06-10"
+          onclick="this.showPicker()">
+          <br><br>
+      </div>
+
+      <div class="submitReset">
+        <button type="reset" onclick="submitForm()">Reset</button><br>
+        <button type="submit">Submit</button>
+      </div>
+
+   </form>
+</body>
+</html>

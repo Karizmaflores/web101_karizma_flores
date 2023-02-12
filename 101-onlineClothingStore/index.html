@@ -40,7 +40,41 @@
        console.log({usersInput})
      }
    </script>
-   
+   <button onclick="sayHello();">Click Me</button>
+   <button onclick="sayHi();">Click Me Too</button>
+   <button onclick="openANewWindow();">Open</button>
+
+   <script>
+     let secondWindow;
+
+     function sayHello(){ alert('Hello, Window.alert Method!') };
+     function sayHi(){ console.log('Hi, Console.log Method!') };
+     function openANewWindow() {
+       secondWindow = window.open("", "myWindow", "width=400, height=300");
+     }
+
+   </script>
+
+   <button onclick="createNewObject()">Create New Object</button>
+ <script>
+
+  //Create a new variable and use the Document's createElement method to place a new H3 element as its value
+  //Then create another variable and use the Document's createTextNode method to place a Text Node/Object with "THIS IS A TEST" as dummy data.
+  //Use the Global method, appendChild() to stick the Text Node/Object into the new H3 Object.
+  //Use the same method to stick the new H3 Object into the Body of the Document object.
+  function createNewObject() {
+    let newObject = document.createElement("H3")
+    let text = document.createTextNode("THIS IS A TEST.")
+
+    newObject.appendChild(text)
+    document.body.appendChild(newObject)
+  }
+</script>
+<div id="image-container">
+  <img 
+    src="https://cdn.pixabay.com/photo/2016/03/27/19/31/fashion-1283863_960_720.jpg"
+    alt="folded blue and white knit sweater on white background">
+</div>
 </body>
 </body>
 </html>
